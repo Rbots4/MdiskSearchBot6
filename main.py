@@ -57,7 +57,7 @@ async def inline_handlers(_, event: Message):
             if "|||" in message.text:
                 f_text = message.text.split("|||", 1)[0]
                 msg_text = message.text.html.split("|||", 1)[0]
-            answers += f'** Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n✅ NEXT PAGE\n\n ━━━━━━━━━\n\n**'
+            answers += f'**  ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n  ' + '' + f_text.split("\n", 2)[-1] + ' \n\n✅ NEXT PAGE\n\n ━━━━━━━━━\n\n**'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(60)
@@ -77,11 +77,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies"),
-						InlineKeyboardButton("Join", url="https://t.me/Technicalcynite")
+						InlineKeyboardButton("Our Channel", url="https://t.me/Wombackup"),
+						InlineKeyboardButton("Join", url="https://t.me/worldofmovies8")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Creator", url="https://t.me/Royaldeep01"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
