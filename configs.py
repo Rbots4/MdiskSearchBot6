@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Royaldeep01
 
 import os
 
@@ -45,7 +45,7 @@ I Can Search 🔍 What You Want❗
     START_MSG = """
 <b>Hey! {}😅,
 
-I'm Mdisk Search Robot.🤖</a>
+I'm Movies Search Robot.🤖</a>
 
 I Can Search 🔍 What You Want❗
 
