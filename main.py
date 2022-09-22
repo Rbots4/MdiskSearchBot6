@@ -77,11 +77,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies"),
-						InlineKeyboardButton("Join", url="https://t.me/Technicalcynite")
+						InlineKeyboardButton("Our Channel", url="https://t.me/worldofmovies8"),
+						InlineKeyboardButton("Join", url="https://t.me/wombackup")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Creator", url="https://t.me/royaldeep01"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -96,10 +96,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies")
+						InlineKeyboardButton("Our Channel", url="https://t.me/worldofmovies8")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Owner", url="https://t.me/Royaldeep01"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -117,8 +117,8 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support", url="https://t.me/cyniteofficial"),
-						InlineKeyboardButton("Channel", url="https://t.me/cynitemovies")
+						InlineKeyboardButton("Support", url="https://t.me/Royaldeep01"),
+						InlineKeyboardButton("Channel", url="https://t.me/worldofmovies8")
 					]
 				]
 			),
