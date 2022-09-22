@@ -1,4 +1,4 @@
-# (c) @RoyalKrrishna
+# (c) @Royaldeep01
 
 from configs import Config
 from pyrogram import Client, filters, idle
@@ -57,7 +57,7 @@ async def inline_handlers(_, event: Message):
             if "|||" in message.text:
                 f_text = message.text.split("|||", 1)[0]
                 msg_text = message.text.html.split("|||", 1)[0]
-            answers += f'**  ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n  ' + '' + f_text.split("\n", 2)[-1] + ' \n\n✅ NEXT PAGE\n\n ━━━━━━━━━\n\n**'
+            answers += f'** Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n✅ NEXT PAGE FOR RESULTS\n\n━━━━━━━━━\n\n**'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(60)
@@ -77,11 +77,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/Wombackup"),
-						InlineKeyboardButton("Join", url="https://t.me/worldofmovies8")
+						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies"),
+						InlineKeyboardButton("Join", url="https://t.me/Technicalcynite")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/Royaldeep01"),
+						InlineKeyboardButton("Creator", url="https://t.me/cyniteofficial"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -96,10 +96,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/worldofmovies8")
+						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/royaldeep01"),
+						InlineKeyboardButton("Owner", url="https://t.me/cyniteofficial"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -117,8 +117,8 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Report", url="https://t.me/royaldeep01"),
-						InlineKeyboardButton("Channel", url="https://t.me/wombackup")
+						InlineKeyboardButton("Support", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Channel", url="https://t.me/cynitemovies")
 					]
 				]
 			),
