@@ -48,7 +48,7 @@ async def help_handler(_, event: Message):
 async def inline_handlers(_, event: Message):
     if event.text == '/start':
         return
-    answers = f'**📂 Searching For ➠ {event.text} \n\nFree Tips 😜\n\n ➠ If Your Movie Will Not Come Than Chek Spelling And Contact Owner \n\n**'
+    answers = f'**📂 Searching Results For ➠ {event.text} \n\nFree Tips 😜\n\n ➠ If Your Movie Will Not Come Than Chek Spelling And Contact Owner \n\n**'
     async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             thumb = None
